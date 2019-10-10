@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Google Maps Simulator</title>
+
+        <script src="vendors/p5js/p5.js"></script>
+        <script src="vendors/p5js/p5.dom.js"></script>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="resources/js/convert-image/script.js"></script>
+        <script src="resources/js/convert-image/sketch.js"></script>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="resources/css/convert-image/style.css"
+        />
+    </head>
+    <body>
+        <div class="controls">
+            <div class="control-item">
+                <input
+                    id="id-scale-value"
+                    type="number"
+                    name="scale"
+                    value="10"
+                />
+                <span>:1</span>
+                <button id="id-set-scale">Set Scale</button>
+            </div>
+            <div class="control-item">
+                <span>Current Mode:</span>
+                <select id="id-mode-select">
+                    <option value="point">Point</option>
+                    <option value="horizontal">Horizontal Guide</option>
+                    <option value="vertical">Vertical Guide</option>
+                </select>
+            </div>
+            <button id="id-add-points" class="control-item">Add Points</button>
+            <button id="id-save-points" class="control-item">
+                Save Points
+            </button>
+        </div>
+    </body>
+</html>
